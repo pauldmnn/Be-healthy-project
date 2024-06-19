@@ -1,0 +1,26 @@
+.heading {
+    text-align: center;
+    color: red;
+}
+
+.container {
+    background-color: rgb(227, 224, 224);
+    align-items: center;
+    box-sizing: border-box;
+    width: 90%;
+    height: auto;
+    max-height: auto;
+    max-width: 900px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding: 1%;
+    text-align: center;
+
+}
+
+
+ 
+
+
+
+
