@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&display=swap"
         rel="stylesheet">
     <title>Be healthy</title>
 </head>
@@ -20,25 +20,27 @@
     <div class="container">
         <h2>BMI calculator</h2>
         <div class="panel">
-            <h3>Calculate your BMI</h3>
-            <p id="text" class="text-detais">Add wha's your weight and height in the box below to check your BMI </p>
-            <div class="input-panel">
-                <label for="weight">What's your weight:</label>
-                <input type="number" id="weight-value" placeholder="Weight (kg)">
-              </div>
-              <div class="input-panel"></div>
-                <label for="height">How tall are you:</label>
-                <input type="number" id="height-value" placeholder="Height (cm)">
-              </div>
-              
-              <button onclick="calculateBMI()">Check your BMI</button>
-              <div id="result"></div>
+            <h3>Use this calculator to calculate your BMI</h3>
+            <p id="text" class="text-details"><strong><span>&#8681;</span></strong> Add wha's your weight and height in
+                the box below to check your BMI <strong><span>&#8681;</span></strong></p>
+                <div class="input-panel">
+                    <label for="weight">What's your weight:</label>
+                    <input type="number" id="weight" placeholder="Weight (kg)">
+                </div>
+                <div class="input-panel">
+                    <label for="height">How tall are you:</label>
+                    <input type="number" id="height" placeholder="Height (cm)">
+                </div>
         </div>
+
+        <button onclick="calculateBMI()">Check your BMI</button>
+        <div id="result"></div>
+    </div>
     </div>
 
 
 
-        
+
 
 
 
