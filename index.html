@@ -25,11 +25,11 @@
                 the box below to check your BMI <strong><span>&#8681;</span></strong></p>
             <div class="input-panel">
                 <label for="weight">What is your weight:</label>
-                <input type="number" id="weight" placeholder="Weight (kg)">
+                <input type="number" id="weight" placeholder="Weight (kg)" required>
             </div>
             <div class="input-panel">
                 <label for="height">How tall are you:</label>
-                <input type="number" id="height" placeholder="Height (cm)">
+                <input type="number" id="height" placeholder="Height (cm)" required>
             </div>
             <button type="button" class="myBtn" onclick="calculateBMI(); openPopup();">Check your BMI</button>
             <div class="popup" id="popup">
@@ -37,7 +37,7 @@
                 <p>This is your BMI:</p>
                 <div id="result"></div>
                 <button class="btn" type="button" onclick="closePopup();">OK</button>
-                
+
             </div>
         </div>
     </div>
@@ -45,31 +45,16 @@
         <h2>Keep hydrated</h2>
         <div>
             <h3>How much did you drink today</h3>
-            <p>Add the amount of fluids you drank so you can see if you are hydrated enough</p>
-            <div class="fluids-input">
-                <input type="number" id="fluids" placeholder="Fluids (mls)">
+            <p>Add the amount of fluids you drank</p>
+            <div class="input-panel">
+                <input type="number" id="fluids" placeholder="Fluids (mls)" required>
             </div>
-            <button data-type="submit" id="add-fluids-btn" class="fluids-btn">Add fluids</button>
+            <button type="button" id="add-fluids-btn" class="fluids-btn">Add fluids</button>
+            <div class="total-amount">
+                <p class="amount">You drank: <span id="total-amount" type="number">0</span></p>
+            </div>
         </div>
-        <div class="total-amount">
-            <p class="amount">You drank: <span id="total-amount">0</span></p>
-        </div>
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="assets/js/script.js"></script>
 </body>

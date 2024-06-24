@@ -1,8 +1,7 @@
 /* Body style */
 body {
-  display: flex;
-  justify-content: center;
-  background-color: white;
+
+  background-color: rgb(255, 255, 255);
   font-family: "Oxygen", sans-serif;
   color: black;
   text-align: center;
@@ -18,16 +17,17 @@ body {
 
 /* Add style to BMI calculator */
 .container {
-  
+  display: flex;
+  justify-content: center;
   background-color: rgb(227, 224, 224);
   align-items: center;
   box-sizing: border-box;
-  width: 90%;
-  max-width: 900px;
   margin-left: 10rem;
   margin-right: 10rem;
   padding: 1%;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 h2 {
@@ -103,13 +103,14 @@ button:hover {
   transform: translate(-50%, -50%) scale(0.1);
   visibility: hidden;
   transition: transform 0.4s, top 0.4s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .open-popup {
   visibility: visible;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
-  box-shadow: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #result {
@@ -122,14 +123,17 @@ button:hover {
 
 .fluids-container {
   background-color: rgb(40, 219, 255);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  width: 90%;
-  max-width: 900px;
   margin-left: 10rem;
   margin-right: 10rem;
   padding: 1%;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .fluids-btn {
@@ -150,13 +154,11 @@ button:hover {
   .heading {
     font-size: large;
   }
-  .container {
+
+  .container .fluids-container {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
   }
 
   .popup {
@@ -166,7 +168,7 @@ button:hover {
 }
 
 @media (max-width: 500px) {
-  .container {
+  .container .fluids-container {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -180,23 +182,3 @@ button:hover {
     top: 80%;
   }
 }
-
-@media (max-width: 1320px) {
-  .heading {
-    font-size: large;
-  }
-  .container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-  }
-
-  .popup {
-    width: auto;
-    top: 70%;
-  }
-}
-
