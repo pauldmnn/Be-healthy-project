@@ -34,14 +34,14 @@
             <button type="button" class="myBtn" onclick="calculateBMI(); openPopup();">Check your BMI</button>
             <div class="popup" id="popup">
                 <h3>Thank you for checking your BMI</h3>
-                <p>Your BMI is:</p>
+                <p>This is your BMI:</p>
                 <div id="result"></div>
                 <button class="btn" type="button" onclick="closePopup();">OK</button>
                 
             </div>
         </div>
     </div>
-    <div class="fluid-container">
+    <div class="fluids-container">
         <h2>Keep hydrated</h2>
         <div>
             <h3>How much did you drink today</h3>
@@ -49,10 +49,10 @@
             <div class="fluids-input">
                 <input type="number" id="fluids" placeholder="Fluids (mls)">
             </div>
-            <button data-type="submit" class="fluid-btn">Add fluids</button>
+            <button data-type="submit" id="add-fluids-btn" class="fluids-btn">Add fluids</button>
         </div>
         <div class="total-amount">
-            <p class="amount">You drank: <span id="amount">0</span></p>
+            <p class="amount">You drank: <span id="total-amount">0</span></p>
         </div>
 
     </div>

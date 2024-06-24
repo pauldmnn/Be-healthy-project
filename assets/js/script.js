@@ -3,45 +3,47 @@
  which wil calculate the BMI
  */
 function calculateBMI() {
-  var heightInput = document.getElementById("height");
-  var weightInput = document.getElementById("weight");
-  var resultDiv = document.getElementById("result");
+  let heightInput = document.getElementById("height");
+  let weightInput = document.getElementById("weight");
+  let result = document.getElementById("result");
 
   var height = parseFloat(heightInput.value);
   var weight = parseFloat(weightInput.value);
 
-  if (weight = 0) {
-    resultDiv.innerHTML = "Please enter your weight.";
+  if (weight <= "1" && weight === "500") {
+    alert("Please enter your weight.");
     return;
   }
 
-  if (height = 0) {
-    resultDiv.innerHTML = "Please enter valid weight.";
+  if (height <= 1 && height === 350) {
+    alert("Please enter your height.");
     return;
   }
 
   var bmi = weight / ((height / 100) ** 2);
-  var category = "";
+  var classification = "";
 
 /**
  * Tell the result to the user and
  * tell the user in their BMI
  */
-  if (bmi <= 16) {
-    category = "Severly underweight"
+  if (bmi > 1 && bmi <= 16) {
+    classification = "Severly underweight"
   } else if (bmi > 16 && bmi <= 18.5) {
-    category = "Underweight"
+    classification = "Underweight"
   } else if (bmi > 18.5 && bmi <= 24) {
-    category = "Optimal weight"
+    classification = "Optimal weight"
   } else if (bmi > 24 && bmi <= 29) {
-    category = "Overweight"
+    classification = "Overweight"
   } else if (bmi > 29 && bmi <= 39) {
-    category = "Obese"
-  } else if (bmi > 39) {
-    category = "Severly obese"
+    classification = "Obese"
+  } else if (bmi > 39 && bmi <= 60) {
+    classification = "Severly obese"
+  } else {
+    alert("Enter valid weight and height")
   }
 
-  resultDiv.innerHTML = "Your BMI is " + bmi.toFixed(2) + " (" + category + ")";
+  result.innerHTML = "This is your BMI " + bmi.toFixed(2) + " (" + classification + ")";
 }
 
 let popup = document.getElementById("popup");
@@ -54,4 +56,23 @@ let popup = document.getElementById("popup");
     popup.classList.remove("open-popup").innerHTML;
   }
 
+/**
+ * Function to add the amount of fluids drank 
+ * and return the totla amount inputed 
+ */
+ document.addEventListener("DOMContent-Loaded", function(event) =>
+  { let totalFluids = 0; 
+  function addFluids() { 
+    let fluidsInput = document.getElementById('fluids').value; 
+    let fluidsAmount = parseInt(fluidsInput); 
 
+    if (!isNaN(fluidsAmount) && fluidsAmount > 0) { 
+      totalFluids += fluidsAmount; 
+      document.getElementById('total-amount').textContent = totalFluids; 
+      document.getElementById('fluids').value = ''; 
+    } else { alert('Please enter a valid number');    
+    } 
+    }
+    let addFluidsBtn = document.getElementById("add-fluids-btn");
+    addFluidsBtn.addEventListener("onclick", addFluids);
+  });
