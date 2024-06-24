@@ -1,3 +1,7 @@
+/**
+ *Initial function for the calculator
+ which wil calculate the BMI
+ */
 function calculateBMI() {
   var heightInput = document.getElementById("height");
   var weightInput = document.getElementById("weight");
@@ -6,14 +10,23 @@ function calculateBMI() {
   var height = parseFloat(heightInput.value);
   var weight = parseFloat(weightInput.value);
 
-  if (isNaN(height) || isNaN(weight)) {
-    resultDiv.innerHTML = "Please enter valid height and weight.";
+  if (weight = 0) {
+    resultDiv.innerHTML = "Please enter your weight.";
+    return;
+  }
+
+  if (height = 0) {
+    resultDiv.innerHTML = "Please enter valid weight.";
     return;
   }
 
   var bmi = weight / ((height / 100) ** 2);
   var category = "";
 
+/**
+ * Tell the result to the user and
+ * tell the user in their BMI
+ */
   if (bmi <= 16) {
     category = "Severly underweight"
   } else if (bmi > 16 && bmi <= 18.5) {
@@ -40,3 +53,5 @@ let popup = document.getElementById("popup");
   function closePopup(){
     popup.classList.remove("open-popup").innerHTML;
   }
+
+
