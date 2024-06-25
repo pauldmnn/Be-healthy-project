@@ -18,36 +18,45 @@
         <img src="assets/images/heart-1.png" alt="Active heart">Be healthy, live longer
     </h1>
     <div class="container">
-        <h2>BMI calculator</h2>
+        <div class="bmi-style">
+            <h2>BMI calculator</h2>
+            <p>The BMI stand for: Body Mass Index. BMI screens for weight categories that may lead to health problems.
+                It is good to check your BMI so you know if you need to gain or loose weight.</p>
+        </div>
         <div class="panel">
             <h3>Use this calculator to calculate your BMI</h3>
             <p id="text" class="text-details"><strong><span>&#8681;</span></strong> Add your weight and height in
                 the box below to check your BMI <strong><span>&#8681;</span></strong></p>
             <div class="input-panel">
                 <label for="weight">What is your weight:</label>
-                <input type="number" id="weight" placeholder="Weight (kg)" required>
+                <input type="number" min="0" id="weight" placeholder="Weight (kg)" required>
             </div>
             <div class="input-panel">
                 <label for="height">How tall are you:</label>
-                <input type="number" id="height" placeholder="Height (cm)" required>
+                <input type="number" min="0" id="height" placeholder="Height (cm)" required>
             </div>
             <button type="button" class="myBtn" onclick="calculateBMI(); openPopup();">Check your BMI</button>
             <div class="popup" id="popup">
                 <h3>Thank you for checking your BMI</h3>
-                <p>This is your BMI:</p>
+                <p>Your BMI is:</p>
                 <div id="result"></div>
                 <button class="btn" type="button" onclick="closePopup();">OK</button>
-
             </div>
         </div>
     </div>
     <div class="fluids-container">
-        <h2>Monitor your fluid intake</h2>
-        <div>
+        <div class="fluids-style">
+            <h2>Monitor your fluid intake</h2>
+            <p>It plays a key role in many of our body's functions, including bringing nutrients to cells, getting rid
+                of
+                wastes, protecting joints and organs, and maintaining body temperature. A normal adult should drink a
+                minimum on 1500mls of water in a day</p>
+        </div>
+        <div class="fluids-panel">
             <h3>How much did you drink today</h3>
             <p>Add the amount of fluids you drank</p>
             <div class="input-panel">
-                <input type="number" id="fluids" placeholder="Fluids (mls)" required>
+                <input type="number" min="0" id="fluids" placeholder="Fluids (mls)" required>
             </div>
             <button type="button" id="add-fluids-btn" class="fluids-btn">Add fluids</button>
             <div class="total-amount">

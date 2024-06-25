@@ -30,9 +30,21 @@ body {
 
 }
 
+.bmi-style {
+  flex: 1;
+  text-align: center;
+  background-color: azure;
+}
+
 h2 {
   font-size: xx-large;
+  text-align: center;
 }
+
+.panel {
+  flex: 1;
+}
+
 
 h3 {
   font-size: x-large;
@@ -147,6 +159,15 @@ button:hover {
   font-size: 15px;
   font-weight: 300;
 }
+.fluids-style {
+  flex: 1;
+  text-align: center;
+  background-color: azure;
+}
+
+.fluids-panel {
+  flex: 1;
+}
 
 @media (max-width: 320px) {
   .heading {
@@ -178,7 +199,7 @@ button:hover {
     width: auto;
     margin-left: 2px;
     margin-right: 2px;
-    
+
   }
 
   .fluids-container {

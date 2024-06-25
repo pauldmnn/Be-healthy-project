@@ -5,23 +5,16 @@
 
 let heightInp = document.getElementById("height");
 let weightInp = document.getElementById("weight");
-let res1 = document.getElementById("result");
+let bmiResult = document.getElementById("result");
 
 function calculateBMI() {
+
   var height = parseFloat(heightInp.value);
   var weight = parseFloat(weightInp.value);
 
-  if (weight <= 1 && weight === 500) {
-    return ["Please enter your weight."];
+  if (isNaN(weight) || isNaN(height)) {
+    bmiResult.innerHTML = alert("Please enter valid height and weight.");
   }
-
-  if (height <= 1 && height === 350) {
-    return ["Please enter your height."];
-  }
-
-  if (height === NaN || weight === NaN) {
-    return ["You must add your weight and height to calculate your BMI"]
-  } 
 
   var bmi = weight / ((height / 100) ** 2);
   var classification = "";
@@ -42,22 +35,21 @@ function calculateBMI() {
     classification = "Obese"
   } else if (bmi > 39 && bmi <= 60) {
     classification = "Severly obese"
-  } else {
-    alert("Enter valid weight and height")
   }
 
-  res1.innerHTML = "This is your BMI: " + bmi.toFixed(2) + " (" + classification + ")";
+  bmiResult.innerHTML = "Your BMI is: " + bmi.toFixed(2) + 
+  " (This means that you are: " + classification + ")";
 
 }
 
 let popup = document.getElementById("popup");
 
 function openPopup() {
-  popup.classList.add("open-popup").innerHTML;
-}
+    popup.classList.add("open-popup");
+  }
 
 function closePopup() {
-  popup.classList.remove("open-popup").innerHTML;
+  popup.classList.remove("open-popup");
 }
 
 /**
@@ -66,13 +58,13 @@ function closePopup() {
  */
 const fluidInputValue = document.getElementById("fluids");
 const totalAmountValue = document.getElementById("total-amount");
-const btn1 = document.getElementById("add-fluids-btn");
+const fluidsButton = document.getElementById("add-fluids-btn")
 
 function addFluids() {
-  
+
   console.log(typeof fluidInputValue.value)
   console.log(typeof totalAmountValue.textContent)
-  console.log(btn1)
+
 
   //Covert values to number type
 
@@ -89,14 +81,12 @@ function addFluids() {
 
   totalAmountValue.textContent = totalLiquidAmount
 
-
-
   //Popup message to inform user if the reached their target
 
-  if (totalAmountValue >= 1500) {
+  if (totalLiquidAmount >= 1500) {
     alert("Congradulations! You have reached your daily target")
   } else {
-    return ["Continue drinking. Your are on the right track"]
+    alert("Continue drinking. Your are on the right track")
   }
 }
-btn1.addEventListener("click", addFluids);
+fluidsButton.addEventListener("click", addFluids);
