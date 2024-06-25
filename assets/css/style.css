@@ -108,7 +108,7 @@ button:hover {
 
 .open-popup {
   visibility: visible;
-  top: 50%;
+  top: 70%;
   transform: translate(-50%, -50%) scale(1);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -159,6 +159,7 @@ button:hover {
     display: flex;
     justify-content: center;
     width: 100%;
+
   }
 
   .popup {
@@ -172,9 +173,7 @@ button:hover {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 1%;
+    
   }
 
   .popup {

@@ -2,13 +2,14 @@
  *Initial function for the calculator
  which wil calculate the BMI
  */
-function calculateBMI() {
-  let heightInput = document.getElementById("height");
-  let weightInput = document.getElementById("weight");
-  let resultDiv = document.getElementById("result");
 
-  var height = parseFloat(heightInput.value);
-  var weight = parseFloat(weightInput.value);
+let heightInp = document.getElementById("height");
+let weightInp = document.getElementById("weight");
+let res1 = document.getElementById("result");
+
+function calculateBMI() {
+  var height = parseFloat(heightInp.value);
+  var weight = parseFloat(weightInp.value);
 
   if (weight <= 1 && weight === 500) {
     return ["Please enter your weight."];
@@ -17,6 +18,10 @@ function calculateBMI() {
   if (height <= 1 && height === 350) {
     return ["Please enter your height."];
   }
+
+  if (height === NaN || weight === NaN) {
+    return ["You must add your weight and height to calculate your BMI"]
+  } 
 
   var bmi = weight / ((height / 100) ** 2);
   var classification = "";
@@ -41,7 +46,8 @@ function calculateBMI() {
     alert("Enter valid weight and height")
   }
 
-  resultDiv.innerHTML = "This is your BMI: " + bmi.toFixed(2) + " (" + classification + ")";
+  res1.innerHTML = "This is your BMI: " + bmi.toFixed(2) + " (" + classification + ")";
+
 }
 
 let popup = document.getElementById("popup");
@@ -56,20 +62,41 @@ function closePopup() {
 
 /**
  * Function to add the amount of fluids drank 
- * and return the totla amount inputed 
+ * and return the total amount inputed 
  */
-const inp1 = document.getElementById("fluids");
-const tot1 = document.getElementById("total-amount");
+const fluidInputValue = document.getElementById("fluids");
+const totalAmountValue = document.getElementById("total-amount");
 const btn1 = document.getElementById("add-fluids-btn");
 
 function addFluids() {
-  tot1.innerHTML = (inp1 + btn1).value;
+  
+  console.log(typeof fluidInputValue.value)
+  console.log(typeof totalAmountValue.textContent)
+  console.log(btn1)
 
-  if (tot1 >= 1500){
-    return["Congradulations! You have reached your daily target"]
+  //Covert values to number type
+
+  fluidInputValueToNumber = Number(fluidInputValue.value)
+  totalAmountValueToNumber = Number(totalAmountValue.textContent)
+  console.log(typeof fluidInputValueToNumber)
+  console.log(typeof totalAmountValueToNumber)
+  // Calculate total liquid amount
+
+  const totalLiquidAmount = fluidInputValueToNumber + totalAmountValueToNumber
+  console.log(totalLiquidAmount)
+
+  // Show liquid amount on UI
+
+  totalAmountValue.textContent = totalLiquidAmount
+
+
+
+  //Popup message to inform user if the reached their target
+
+  if (totalAmountValue >= 1500) {
+    alert("Congradulations! You have reached your daily target")
   } else {
     return ["Continue drinking. Your are on the right track"]
   }
 }
-btn1.addEventListener("click", addFluids );
-
+btn1.addEventListener("click", addFluids);
