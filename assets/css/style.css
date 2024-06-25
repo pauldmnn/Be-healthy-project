@@ -122,10 +122,9 @@ button:hover {
 }
 
 .fluids-container {
-  background-color: rgb(40, 219, 255);
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
+  background-color: rgb(40, 215, 254);
   align-items: center;
   box-sizing: border-box;
   margin-left: 10rem;
@@ -133,7 +132,6 @@ button:hover {
   padding: 1%;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .fluids-btn {
@@ -155,10 +153,17 @@ button:hover {
     font-size: large;
   }
 
-  .container .fluids-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  .container {
+    width: auto;
+    margin-left: 2px;
+    margin-right: 2px;
+
+  }
+
+  .fluids-container {
+    width: auto;
+    margin-left: 2px;
+    margin-right: 2px;
 
   }
 
@@ -168,12 +173,19 @@ button:hover {
   }
 }
 
-@media (max-width: 500px) {
-  .container .fluids-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+@media (max-width: 600px) {
+  .container {
+    width: auto;
+    margin-left: 2px;
+    margin-right: 2px;
     
+  }
+
+  .fluids-container {
+    width: auto;
+    margin-left: 2px;
+    margin-right: 2px;
+
   }
 
   .popup {
