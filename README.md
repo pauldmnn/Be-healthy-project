@@ -1,131 +1,266 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Be healthy
 
-Welcome Paul-vasile Dominan,
+[Link to a live site](https://pauldmnn.github.io/Be-healthy-project/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Introduction
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+Welcome to my second project which is part of the Code Institute Full Stack Development Course. The purpose of this project is to build an interactive front-end site which will respond to the users actions and allowing the user to input data and see the result.  
 
-## Gitpod Reminders
+In this project the user can check what their Body Mass Index is and they can track the amount of fluids they drank.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The user will be able to input their weight and height and the site will calculate their BMI and will open a popup window in which the user will see their BMI categoy. There is a fluid input box which will allow the user to input the amount of fluide they drank and will strore the result so the user can easly track the amount of fluids they drank. 
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+#### Thank you for using this calculator
 
-Another blue button should appear to click: _Open Browser_.
+## UX - User Experience Design
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+In the course I was taught about the User Experience Design and the importance of it. 
+Below I have listed the 5 plains of UX: 
 
-A blue button should appear to click: _Make Public_,
+- The Strategy Plane
+- The Scope Plane
+- The Structure Plane
+- The Skeleton Plane
+- The Surface Plane
 
-Another blue button should appear to click: _Open Browser_.
+## The Strategy Plane
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Creator Goals
 
-To log into the Heroku toolbelt CLI:
+- I want webpage to be easy to navigate.
+- I want webpage to be a user-friendly and responsive.
+- I want users to be able to see what the site is about immidiately.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+### User Stories
 
-### Connecting your Mongo database
+- As a user, I want the purpose of a webpage to be clear so I can decide if the content is right for me.
+- As a user, I want to be able to calculate my BIM by inputing mu weight and height
+- As a user, I want to monitor my fluid intake so I know if i am hydrated 
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+## The Scope Plane
 
-------
+I thought of the features I wanted to implement before designing the project, and a few of them were not achievable within my deadline. I decided to implement the ones covering my user stories first and add the remaining features later.
 
-## Release History
+**Features implemented upon webpage release**
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- The site to have an explanation to why is it important to have a normal body weight.
+- Underneath the BMI calculator to have a fluid calculator so the user can imput the amount of fluids they drank and show them the total amount they have drank. 
+- The BMI calculator button to automaticly change colors wich will make the user drawn to click the button
+- The result for the BMI to be in a popup window
 
-**June 18, 2024,** Add Mongo back into template
+## The Scope Plane
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+### Colors
 
-**May 28 2024:** Fix Mongo and Links installs
+rgb(227, 224, 224):
+- BMI container background 
 
-**April 26 2024:** Update node version to 16
+![rgb(227, 224, 224)](assets/images/rgb-227-224-224.png)
 
-**September 20 2023:** Update Python version to 3.9.17.
+red:
+- Header text
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![rgb(255, 0, 0)](assets/images/red.png)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+#fafafa :
+- Fluids text button
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+![#fafafa Hex Color](assets/images/white.png)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+azure :
+- BMI calculator background 
+- Monitor your fluid intake background
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+![rgb(240, 255, 255 )](assets/images/azure.png)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+rgb(40, 215, 254):
+- Fluids container background
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![rgb(40, 215, 254 )](assets/images/rgb-40-215-254.png)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Yellow:
+- Popup background
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![rgb(255, 255, 0)](assets/images/yellow.png)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Fonts
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Both fonts used in this project are Google Fonts.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+#### Oxygen :
+I used Oxygen as the main font, as it's one of the most popular and user-friendly fonts. The Oxygen font is easy to read even on the smallest devices and provides a positive user experience.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+#### Open Sans:
+Open Sans font has been used for the headings. Using a different font for these features helped me highlight important sections to user and made the website easier and quicker to navigate.
 
-------
+## The Skeleton Plane
 
-## FAQ about the uptime script
+I made some some changes to my project. Some features have become unnecessary or have caused poor user experience, so I decided to make them user friendly.
 
-**Why have you added this script?**
+- The information about BMI and hydration was hard to be distingushed so i added a different color background so the user can read easyer the information
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- The text color for the BMI button was hard to read because of the color blinking so i changed the text color 
 
-**How will this affect me?**
+## The Surface Plane
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Features present across the project 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Calculate BMI section :
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- The calculator is responsive for all devices
+- The the input box is only for numbers
 
-**So….?**
+**Desktop** : 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![Desktop calculator](testing/desktop.png)
 
-**Can I opt out?**
+**Tablet**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![Tablet calculator](testing/tablet.png)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+**Mobile** :
 
-**Anything more?**
+![Phone calculator](testing/phone.png)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
 
-Happy coding!
+## Testing
+
+### Manual testing
+
+- Full page :
+    - The page is fully responsive on large/medium/small resolutions.
+
+- BMI calculator
+    - Calculator is fully responsive an different screen resolutions
+    - Can only add number to the input field
+    - Blink colors are operational and work for 10 seconds and instructed in JS
+    - Popup window opens when the Check BMI button is clicked
+
+- Fluids monitoring
+    - Hover button changes color when mouse hovers
+    - Input field only accepts numbers
+    - Result is added correctly underneath the button
+    - Alert window opens and correct message is displied.  
+
+
+#### Devices used during testing:
+
+- HP laptop
+- Iphone 14 Pro Max
+- Iphone 13 Pro
+
+### Chrome Dev Tools
+
+Chrome dev tools was used throughout the development of the project to test responsiveness. 
+Responsiveness was tested using Dev Tools to emulate the following devices :
+
+- Iphone SE
+- Iphone XR
+- Iphone 12 Pro
+- Iphone 14 Pro Max
+- Pixel 7
+- Samsung Galaxy S8+
+- Samsung Galaxy S20 Ultra
+- iPad Mini
+- iPad Air
+- iPad Pro
+- Surface Pro 7
+- Surface Duo
+- Galaxy Fold
+- Samsung Galaxy A51/71
+- Nest Hub
+- Nest Hub Max
+
+### Browser Testing
+
+During development, webpage was mainly tested on Google Chrome. 
+However, during testing process below browsers have been used :
+
+- Google Chrome
+- Microsoft Edge
+- Safari
+
+### Validation
+
+- I checked the validation for each individual HTML file by direct input into the validator.
+
+[HTML validator](https://validator.w3.org/)
+
+- 0 errors
+- 0 warnings
+
+![HTML validator results](testing/html-validation.png)
+
+- I checked the CSS file by direct input into the validator.
+[CSS validator](https://jigsaw.w3.org/css-validator/)
+
+- 0 errors
+- 0 warnings
+- 0 info messages
+
+![CSS validator results](testing/css-validation.png)
+
+### Bugs and Fixes
+
+- The feedback form for larger screens was not contanied within the main:
+    - Resolved by resizing the feedback form and made it to push the footer down. 
+    ![Bug found](assets/images/feedback-section-before-rectifying-the-error.png)
+
+    - Bug fixed
+     ![Bug fixed](testing/feedback-after-rectifying-the-error.png)
+
+## Deployment 
+
+The main branch of this repository is the most current version and has been used for the deployed version of the site.
+The Code Institiue student template was used to create this project.
+
+[Code Institute Template ](https://github.com/Code-Institute-Org/ci-full-template)
+
+1. Click **Use This Template** button.
+2. Give your repository a name, and description.
+3. Open [Github](https://github.com/) and log into your account.
+4. Click **New Workspace** button.
+5. Create a workspace from your project repository by creating a clone.
+
+### Creating a clone
+
+1. From the repository, click **Code**.
+2. In the **Clone >> HTTPS** section, copy the clone URL for the repository.
+3. Paste a link into the designated area on the github. 
+
+### Forking
+
+1. From the repository, click **Fork**.
+2. Give your repository a name.
+3. Click **Create fork**.
+
+## Credits
+
+### Images :
+
+- Project image for Romania map was taken from Wikipedia
+
+### Audio :
+
+- Mixkit
+
+[Birds chirping near a river](https://mixkit.co/free-sound-effects/nature/)
+
+### Code :
+
+- [Code Institute, Love running project](https://github.com/Code-Institute-Solutions/Love-Running-Solutions) :
+    - Inspiration for the feedback page/form.
+
+- [Font Awesome](https://fontawesome.com/) :
+    - Used for all icons across the website.
+
+### Photos
+
+- I used my own gallery for this section 
+
+
+## Thank you to everyone who read this documentation! 
