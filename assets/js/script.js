@@ -42,6 +42,38 @@ function calculateBMI() {
 
 }
 
+// Get the element by its ID 
+const blinkDiv = 
+document.getElementById("blinkBtn"); 
+
+// An array of colors to be used for blinking 
+const colors = ['#FF013C', 'green', '#0134FF']; 
+
+// Variable to keep track of the 
+// current color index 
+let currentColorIndex = 0; 
+
+// Function to toggle the background 
+// color of the button 
+function blinkBackground() { 
+blinkBtn.style.backgroundColor = 
+    colors[currentColorIndex]; 
+currentColorIndex = 
+    (currentColorIndex + 1) % colors.length; 
+} 
+
+// Start the blinking by setting an interval  
+// that calls the blinkBackground  
+// function every 500ms (0.5 second) 
+const blinkingInterval = 
+setInterval(blinkBackground, 500); 
+
+// To stop blinking after 10 seconds,  
+// use setTimeout to clear the interval 
+setTimeout(() => { 
+clearInterval(blinkingInterval); 
+}, 10000); 
+
 let popup = document.getElementById("popup");
 
 function openPopup() {

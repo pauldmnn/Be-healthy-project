@@ -75,7 +75,7 @@ input[type="number"] {
 /*Style the button*/
 .myBtn {
   background-color: blue;
-  color: #fafafa;
+  color: #0f0f0f;
   border: 0;
   outline: none;
   padding: 15px 50px;
@@ -169,7 +169,10 @@ button:hover {
   flex: 1;
 }
 
+/*Media query for phone screens*/
 @media (max-width: 320px) {
+
+  }
   .heading {
     font-size: large;
   }

@@ -4,16 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Name tag for search engine-->
+<meta name="description" content="BMI calculator, healthy weight, Fluids monitoring, ">
+<meta name="key words" content="check BMI, fluids, hydration, health, weight check">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&display=swap"
         rel="stylesheet">
+
+    <!--Title-->
     <title>Be healthy</title>
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" type="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+
 </head>
 
+<!--Mani content-->
+
 <body>
+
+    <!--BMI calculator section-->
     <h1 class="heading">
         <img src="assets/images/heart-1.png" alt="Active heart">Be healthy, live longer
     </h1>
@@ -25,8 +41,9 @@
         </div>
         <div class="panel">
             <h3>Use this calculator to calculate your BMI</h3>
-            <p id="text" class="text-details"><strong><span>&#8681;</span></strong> Add your weight and height in
-                the box below to check your BMI <strong><span>&#8681;</span></strong></p>
+            <p id="text" class="text-details"> Add your weight and height in
+                the box below to check your BMI </p>
+            <strong><span>&#8681;</span></strong>
             <div class="input-panel">
                 <label for="weight">What is your weight:</label>
                 <input type="number" min="0" id="weight" placeholder="Weight (kg)" required>
@@ -35,7 +52,8 @@
                 <label for="height">How tall are you:</label>
                 <input type="number" min="0" id="height" placeholder="Height (cm)" required>
             </div>
-            <button type="button" class="myBtn" onclick="calculateBMI(); openPopup();">Check your BMI</button>
+            <button type="button" id="blinkBtn" class="myBtn" onclick="calculateBMI(); openPopup();">Check your
+                BMI</button>
             <div class="popup" id="popup">
                 <h3>Thank you for checking your BMI</h3>
                 <p>Your BMI is:</p>
@@ -44,6 +62,8 @@
             </div>
         </div>
     </div>
+
+    <!--Fluids setion-->
     <div class="fluids-container">
         <div class="fluids-style">
             <h2>Monitor your fluid intake</h2>
