@@ -75,7 +75,7 @@ input[type="number"] {
 
 /*Style the button*/
 .myBtn {
-  background-color: blue;
+  background-color: rgba(0, 251, 255, 0.509);;
   color: #0f0f0f;
   border: 0;
   outline: none;
@@ -89,7 +89,7 @@ input[type="number"] {
 
 .btn {
   background: #fafafa;
-  background-color: blue;
+  background-color: rgba(0, 251, 255, 0.509);
   color: #fafafa;
   border: 0;
   margin-bottom: 10px;

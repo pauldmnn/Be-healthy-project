@@ -6,9 +6,11 @@
 
 ## Introduction
 
-Welcome to my second project which is part of the Code Institute Full Stack Development Course. The purpose of this project is to build an interactive front-end site which will respond to the users actions and allowing the user to input data and see the result.  
+Welcome to my second project which is part of the Code Institute Full Stack Development Course. The purpose of this project is to build an interactive front-end wedsite using HTML, CSS and JavaScript which will respond to the users actions and allowing the user to input data and see the result. 
 
 In this project the user can check what their Body Mass Index is and they can track the amount of fluids they drank.
+
+The user will be able to see what types of foods and amount whey shoud be eating for a healty and well balanced diet.
 
 The user will be able to input their weight and height and the site will calculate their BMI and will open a popup window in which the user will see their BMI categoy. There is a fluid input box which will allow the user to input the amount of fluide they drank and will strore the result so the user can easly track the amount of fluids they drank. 
 
@@ -38,8 +40,8 @@ Below I have listed the 5 plains of UX:
 ### User Stories
 
 - As a user, I want the purpose of a webpage to be clear so I can decide if the content is right for me.
-- As a user, I want to be able to calculate my BIM by inputing mu weight and height
-- As a user, I want to monitor my fluid intake so I know if i am hydrated 
+- As a user, I want to be able to calculate my BIM by inputing mu weight and height.
+- As a user, I want to monitor my fluid intake so I know if i am hydrated.
 
 ## The Scope Plane
 
@@ -48,9 +50,10 @@ I thought of the features I wanted to implement before designing the project, an
 **Features implemented upon webpage release**
 
 - The site to have an explanation to why is it important to have a normal body weight.
-- Underneath the BMI calculator to have a fluid calculator so the user can imput the amount of fluids they drank and show them the total amount they have drank. 
-- The BMI calculator button to automaticly change colors wich will make the user drawn to click the button
-- The result for the BMI to be in a popup window
+- The pie chart to be intercative and information to be displayed when the user hovers over the pie chart
+- Added a fluid calculator so the user can imput the amount of fluids they drank and show them the total amount they have drank. 
+- The BMI calculator button to automaticly change colors wich will make the user drawn to click the button.
+- The result for the BMI to be in a popup window.
 
 ## The Scope Plane
 
