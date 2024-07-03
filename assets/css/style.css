@@ -75,7 +75,8 @@ input[type="number"] {
 
 /*Style the button*/
 .myBtn {
-  background-color: rgba(0, 251, 255, 0.509);;
+  background-color: rgba(0, 251, 255, 0.509);
+  ;
   color: #0f0f0f;
   border: 0;
   outline: none;

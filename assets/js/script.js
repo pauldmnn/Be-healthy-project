@@ -2,7 +2,6 @@
  *Initial function for the calculator
  which wil calculate the BMI
  */
-
 let heightInp = document.getElementById("height");
 let weightInp = document.getElementById("weight");
 let bmiResult = document.getElementById("result");
@@ -122,24 +121,20 @@ function addFluids() {
   console.log(typeof fluidInputValue.value)
   console.log(typeof totalAmountValue.textContent)
 
-
   //Convert values to number type
-
   fluidInputValueToNumber = Number(fluidInputValue.value)
   totalAmountValueToNumber = Number(totalAmountValue.textContent)
   console.log(typeof fluidInputValueToNumber)
   console.log(typeof totalAmountValueToNumber)
-  // Calculate total liquid amount
 
+  // Calculate total liquid amount
   const totalLiquidAmount = fluidInputValueToNumber + totalAmountValueToNumber
   console.log(totalLiquidAmount)
 
   // Show liquid amount on UI
-
   totalAmountValue.textContent = totalLiquidAmount
 
   //Popup message to inform user if the reached their target
-
   if (totalLiquidAmount >= 1500) {
     alert("Congradulations! You have reached your daily target")
   } else {
