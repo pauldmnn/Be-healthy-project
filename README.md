@@ -2,6 +2,8 @@
 
 [Link to a live site](https://pauldmnn.github.io/Be-healthy-project/)
 
+![Responsive view of Be healthy website](assets/images/responsive-screen.png)
+
 ## Introduction
 
 Welcome to my second project which is part of the Code Institute Full Stack Development Course. The purpose of this project is to build an interactive front-end site which will respond to the users actions and allowing the user to input data and see the result.  
@@ -125,7 +127,17 @@ I made some some changes to my project. Some features have become unnecessary or
 
 ![Phone calculator](testing/phone.png)
 
+### BMI Calculator
 
+![BMI Calculator](testing/bmi-calculator.png)
+
+    - Tells the user about importance of having a norma body weight and the user can calculate their onw BMI
+
+### Fluids
+
+![Fluid intake monitoring](testing/monitor-fluid-intake.png)
+
+    - Tells the user about the importance of keeping hydrated and then the user can input the amout of fluids they drank and every time they add more fluids the total will be added.
 
 ## Testing
 
@@ -206,13 +218,6 @@ However, during testing process below browsers have been used :
 
 ### Bugs and Fixes
 
-- The feedback form for larger screens was not contanied within the main:
-    - Resolved by resizing the feedback form and made it to push the footer down. 
-    ![Bug found](assets/images/feedback-section-before-rectifying-the-error.png)
-
-    - Bug fixed
-     ![Bug fixed](testing/feedback-after-rectifying-the-error.png)
-
 ## Deployment 
 
 The main branch of this repository is the most current version and has been used for the deployed version of the site.
@@ -242,25 +247,17 @@ The Code Institiue student template was used to create this project.
 
 ### Images :
 
-- Project image for Romania map was taken from Wikipedia
-
-### Audio :
-
-- Mixkit
-
-[Birds chirping near a river](https://mixkit.co/free-sound-effects/nature/)
+- Project image for Romania map was taken from Google an converted by myself
 
 ### Code :
 
-- [Code Institute, Love running project](https://github.com/Code-Institute-Solutions/Love-Running-Solutions) :
-    - Inspiration for the feedback page/form.
+- [Code Institute, Love math project](https://github.com/Code-Institute-Solutions/Love-Math-Solutions) :
+    - Inspiration for the javascript code.
+
+- [Geeks for geeks](https://www.geeksforgeeks.org/):
+    - Inspiration for the blinkng button and BMI calculator javascript code
 
 - [Font Awesome](https://fontawesome.com/) :
     - Used for all icons across the website.
-
-### Photos
-
-- I used my own gallery for this section 
-
 
 ## Thank you to everyone who read this documentation! 
