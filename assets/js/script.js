@@ -92,23 +92,23 @@ google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
     ['Type of food', 'Amount'],
-    ['potatoes, bread, rice, pasta and other starchy carbohydrate foods', 38],
-    ['fruit and vegetables', 40],
-    ['dairy and alternatives', 8],
-    ['beans, pulses, fish, eggs, meat and other protein', 12],
-    ['oils and spreads', 2]
+    ['Potatoes, bread, rice, pasta and other starchy carbohydrate foods', 38],
+    ['Fruit and vegetables', 40],
+    ['Dairy and alternatives', 8],
+    ['Beans, pulses, fish, eggs, meat and other protein', 12],
+    ['Oils and spreads', 2]
   ]);
 
   var options = {
     title: 'Eat well guide',
+    width: "auto",
+    height: "500px",
     is3D: true,
   };
 
   var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
   chart.draw(data, options);
 }
-
-
 
 /**
  * Function to add the amount of fluids drank 
