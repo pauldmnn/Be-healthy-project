@@ -11,10 +11,6 @@ function calculateBMI() {
   var height = parseFloat(heightInp.value);
   var weight = parseFloat(weightInp.value);
 
-  if (isNaN(weight) || isNaN(height)) {
-    bmiResult.innerHTML = alert("Please enter valid height and weight.");
-  }
-
   var bmi = weight / ((height / 100) ** 2);
   var classification = "";
 
@@ -75,7 +71,10 @@ setTimeout(() => {
 let popup = document.getElementById("popup");
 
 function openPopup() {
-  popup.classList.add("open-popup");
+  if (isNaN(weight) || isNaN(height)) {
+    alert("Please enter valid height and weight.");
+  } else {
+    popup.classList.add("open-popup")};
 }
 
 function closePopup() {
@@ -134,8 +133,11 @@ function addFluids() {
   // Show liquid amount on UI
   totalAmountValue.textContent = totalLiquidAmount
 
-  //Popup message to inform user if the reached their target
-  if (totalLiquidAmount >= 1500) {
+  
+ //Popup message to inform user if the reached their target
+  if (fluids.value <= 0) {
+     alert("Please enter the amount of fluids you drank."); 
+     } else if (totalLiquidAmount >= 1500) {
     alert("Congradulations! You have reached your daily target")
   } else {
     alert("Continue drinking. Your are on the right track")
