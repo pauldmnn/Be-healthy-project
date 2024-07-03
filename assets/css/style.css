@@ -88,8 +88,7 @@ input[type="number"] {
 }
 
 .btn {
-  background: #fafafa;
-  background-color: rgba(0, 251, 255, 0.509);
+  background-color: blue;
   color: #fafafa;
   border: 0;
   margin-bottom: 10px;
@@ -152,6 +151,7 @@ button:hover {
   flex: 1;
   text-align: center;
   background-color: azure;
+  padding: 5px;
 }
 
 #piechart_3d {

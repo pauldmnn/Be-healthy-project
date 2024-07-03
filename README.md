@@ -258,12 +258,15 @@ The Code Institiue student template was used to create this project.
 
 ### Images :
 
-- Project image for Romania map was taken from Google an converted by myself
+- Project image for the header was taken from Google an converted by myself
 
 ### Code :
 
 - [Code Institute, Love math project](https://github.com/Code-Institute-Solutions/Love-Math-Solutions) :
     - Inspiration for the javascript code.
+
+- [Google Charts](https://developers.google.com/chart)
+    - Inspiration for the Pie Chart
 
 - [Geeks for geeks](https://www.geeksforgeeks.org/):
     - Inspiration for the blinkng button and BMI calculator javascript code

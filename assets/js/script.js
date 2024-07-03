@@ -83,7 +83,6 @@ function closePopup() {
   popup.classList.remove("open-popup");
 }
 
-
 google.charts.load("current", {
   packages: ["corechart"]
 });
