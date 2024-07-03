@@ -71,8 +71,9 @@ red:
 
 ![#fafafa Hex Color](assets/images/white.png)
 
-azure :
-- BMI calculator background 
+Azure :
+- BMI calculator heading and paragraph background 
+- Eat well guid heading and paragraph background
 - Monitor your fluid intake background
 
 ![rgb(240, 255, 255 )](assets/images/azure.png)
@@ -83,6 +84,7 @@ rgb(40, 215, 254):
 ![rgb(40, 215, 254 )](assets/images/rgb-40-215-254.png)
 
 Yellow:
+- Eat well guid background
 - Popup background
 
 ![rgb(255, 255, 0)](assets/images/yellow.png)
@@ -105,6 +107,7 @@ I made some some changes to my project. Some features have become unnecessary or
 - The information about BMI and hydration was hard to be distingushed so i added a different color background so the user can read easyer the information
 
 - The text color for the BMI button was hard to read because of the color blinking so i changed the text color 
+
 
 ## The Surface Plane
 
@@ -131,7 +134,12 @@ I made some some changes to my project. Some features have become unnecessary or
 
 ![BMI Calculator](testing/bmi-calculator.png)
 
-    - Tells the user about importance of having a norma body weight and the user can calculate their onw BMI
+    - Tells the user about importance of having a normal body weight and the user can calculate their onw BMI.
+
+### Eat well guide
+
+![Eat ell guide](testing/pie-chart.png)
+    - Tells the user about what they need to eat for a healthy and balanced diet. The pie chart is interactive and will tell the user the percentage of different types of foods they need to have eat.
 
 ### Fluids
 
@@ -205,7 +213,7 @@ However, during testing process below browsers have been used :
 - 0 errors
 - 0 warnings
 
-![HTML validator results](testing/html-validation.png)
+![HTML validator results](testing/html-validator.png)
 
 - I checked the CSS file by direct input into the validator.
 [CSS validator](https://jigsaw.w3.org/css-validator/)
@@ -214,7 +222,7 @@ However, during testing process below browsers have been used :
 - 0 warnings
 - 0 info messages
 
-![CSS validator results](testing/css-validation.png)
+![CSS validator results](testing/css-validator.png)
 
 ### Bugs and Fixes
 
