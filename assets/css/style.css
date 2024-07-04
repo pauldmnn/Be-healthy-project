@@ -206,26 +206,26 @@ button:hover {
 
   .container {
     width: auto;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 4px;
+    margin-right: 4px;
   }
 
   .piechart_container {
     width: auto;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 4px;
+    margin-right: 4px;
   }
 
   .piechart_details {
     width: auto;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 4px;
+    margin-right: 4px;
   }
 
   .fluids-container {
     width: auto;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 4px;
+    margin-right: 4px;
   }
 
   .popup {
@@ -237,26 +237,26 @@ button:hover {
 @media (max-width: 600px) {
   .container {
     width: auto;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 6px;
+    margin-right: 6px;
   }
 
   .piechart_container {
-    width: auto;
-    margin-left: 2px;
-    margin-right: 2px;
+    max-width: 600px;
+    margin-left: 6px;
+    margin-right: 6px;
   }
 
   .piechart_details {
-    width: auto;
-    margin-left: 2px;
-    margin-right: 2px;
+    max-width: 600px;;
+    margin-left: 6px;
+    margin-right: 6px;
   }
 
   .fluids-container {
     width: auto;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 6px;
+    margin-right: 6px;
   }
 
   .popup {

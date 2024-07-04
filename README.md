@@ -35,7 +35,7 @@ Below I have listed the 5 plains of UX:
 ### Creator Goals
 
 - I want webpage to be easy to navigate.
-- I want webpage to be a user-friendly and responsive.
+- I want webpage to be a user-friendly and responsive. 
 - I want users to be able to see what the site is about immidiately.
 
 
@@ -108,11 +108,13 @@ Open Sans font has been used for the headings. Using a different font for these 
 
 ## The Skeleton Plane
 
-I made some some changes to my project. Some features have become unnecessary or have caused poor user experience, so I decided to make them user friendly.
+I made some changes to my project. Some features have become unnecessary or have caused poor user experience, so I decided to make them user friendly.
 
 - The information about BMI and hydration was hard to be distingushed so i added a different color background so the user can read easyer the information
 
 - The text color for the BMI button was hard to read because of the color blinking so i changed the text color 
+
+- The website requires a refresh after the screen was resized to allow the pie chart to resize as per the screen size. 
 
 
 ## The Surface Plane
@@ -159,6 +161,7 @@ I made some some changes to my project. Some features have become unnecessary or
 
 - Full page :
     - The page is fully responsive on large/medium/small resolutions.
+    - The website requires a refresh after the screen was resized to allow the pie chart to resize as per the screen size. 
 
 - BMI calculator
     - Calculator is fully responsive an different screen resolutions
@@ -231,6 +234,9 @@ However, during testing process below browsers have been used :
 ![CSS validator results](testing/css-validator.png)
 
 ### Bugs and Fixes
+
+    - The website requires a refresh after the screen was resized to allow the pie chart to resize as per the screen size. 
+
 
 ## Deployment 
 
