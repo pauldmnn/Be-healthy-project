@@ -4,7 +4,7 @@
 
 body {
 
-  background-color: rgb(255, 255, 255);
+  background-color: #fafafa;
   font-family: "Open Sans", sans-serif;
   color: black;
   text-align: center;
@@ -109,7 +109,7 @@ button:hover {
 /*Style the popup box*/
 .popup {
   width: 500px;
-  background: rgb(232, 231, 231);
+  background-color: rgb(232, 231, 231);
   border-radius: 10px;
   position: absolute;
   top: 0;
@@ -248,7 +248,8 @@ button:hover {
   }
 
   .piechart_details {
-    max-width: 600px;;
+    max-width: 600px;
+    ;
     margin-left: 6px;
     margin-right: 6px;
   }

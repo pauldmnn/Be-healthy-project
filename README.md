@@ -16,7 +16,6 @@ The user will be able to input their weight and height and the site will calcula
 
 There is a fluid input box which will allow the user to input the amount of fluids they drank and will store the result so the user can easily track the amount of fluids they drank. 
 
-
 #### Thank you for using this calculator
 
 ## UX - User Experience Design
@@ -35,16 +34,15 @@ Below I have listed the 5 plains of UX:
 ### Creator Goals
 
 - I want webpage to be easy to navigate.
-- I want webpage to be a user-friendly and responsive. 
-- I want users to be able to see what the site is about immidiately.
-
+- I want webpage to be user-friendly and responsive. 
+- I want users to be able to see what the site is about immediately.
 
 ### User Stories
 
 - As a user, I want the purpose of a webpage to be clear so I can decide if the content is right for me.
-- As a user, I want to be able to calculate my BIM by inputing mu weight and height.
+- As a user, I want to be able to calculate my BIM by inputting mu weight and height.
 - As a user, I want to be able to check what types of foods I need to eat for a healthy and well balanced diet
-- As a user, I want to monitor my fluid intake so I know if i am hydrated.
+- As a user, I want to monitor my fluid intake so I know if I am hydrated.
 
 ## The Scope Plane
 
@@ -55,46 +53,46 @@ I thought of the features I wanted to implement before designing the project, an
 - The site to have an explanation to why is it important to have a normal body weight.
 - The pie chart to be interactive and information to be displayed when the user hovers over the pie chart
 - Added a fluid calculator so the user can input the amount of fluids they drank and show them the total amount they have drank. 
-- The BMI calculator button to automatically change colors which will make the user drawn to click the button.
+- The BMI calculator button automatically change colors which will make the user drawn to click the button.
 - The result for the BMI to be in a popup window.
 
 ## The Scope Plane
 
 ### Colors
 
-rgb(227, 224, 224):
-- BMI container background 
-
-![rgb(227, 224, 224)](assets/images/rgb-227-224-224.png)
-
 red:
 - Header text
 
 ![rgb(255, 0, 0)](assets/images/red.png)
 
-#fafafa :
+Hex - fafafa:
+- BMI container background 
+- Fluids container background
 - Fluids text button
 
 ![#fafafa Hex Color](assets/images/white.png)
 
-Azure :
+Lightblue:
 - BMI calculator heading and paragraph background 
-- Eat well guid heading and paragraph background
+- Eat well guide heading and paragraph background
 - Monitor your fluid intake background
 
-![rgb(240, 255, 255 )](assets/images/azure.png)
-
-rgb(40, 215, 254):
-- Fluids container background
-
-![rgb(40, 215, 254 )](assets/images/rgb-40-215-254.png)
+![rgb(140, 243, 243))](assets/images/light-blue.png)
 
 Yellow:
-- Eat well guid background
-- Popup background
+- Eat well guide background
 
 ![rgb(255, 255, 0)](assets/images/yellow.png)
 
+Grey:
+- Popup background
+
+![rgb(232, 231, 231)](assets/images/grey.png)
+
+Blue:
+- Button background
+
+![rgb(0, 0, 255)](assets/images/blue.png)
 
 ### Fonts
 
@@ -104,27 +102,26 @@ Both fonts used in this project are Google Fonts.
 I used Oxygen as the main font, as it's one of the most popular and user-friendly fonts. The Oxygen font is easy to read even on the smallest devices and provides a positive user experience.
 
 #### Open Sans:
-Open Sans font has been used for the headings. Using a different font for these features helped me highlight important sections to user and made the website easier and quicker to navigate.
+Open Sans font has been used for the headings. Using a different font for these features helped me highlight important sections and made the website easier and quicker to navigate.
 
 ## The Skeleton Plane
 
 I made some changes to my project. Some features have become unnecessary or have caused poor user experience, so I decided to make them user friendly.
 
-- The information about BMI and hydration was hard to be distingushed so i added a different color background so the user can read easyer the information
+- The information about BMI and hydration was hard to be distinguished so I added a different color background so the user can read easier the information
 
-- The text color for the BMI button was hard to read because of the color blinking so i changed the text color 
+- The text color for the BMI button was hard to read because of the color blinking so I changed the text color 
 
 - The website requires a refresh after the screen was resized to allow the pie chart to resize as per the screen size. 
-
 
 ## The Surface Plane
 
 ### Features present across the project 
 
-### Calculate BMI section :
+### Calculate BMI section:
 
 - The calculator is responsive for all devices
-- The the input box is only for numbers
+- The input box is only for numbers
 
 **Desktop** : 
 
@@ -142,7 +139,7 @@ I made some changes to my project. Some features have become unnecessary or have
 
 ![BMI Calculator](testing/bmi-calculator.png)
 
-    - Tells the user about importance of having a normal body weight and the user can calculate their onw BMI.
+    - Tells the user about importance of having a normal body weight and the user can calculate their own BMI.
 
 ### Eat well guide
 
@@ -153,13 +150,13 @@ I made some changes to my project. Some features have become unnecessary or have
 
 ![Fluid intake monitoring](testing/monitor-fluid-intake.png)
 
-    - Tells the user about the importance of keeping hydrated and then the user can input the amout of fluids they drank and every time they add more fluids the total will be added.
+- Tells the user about the importance of keeping hydrated and then the user can input the amount of fluids they drank and every time they add more fluids the total will be added.
 
 ## Testing
 
 ### Manual testing
 
-- Full page :
+- Full page:
     - The page is fully responsive on large/medium/small resolutions.
     - The website requires a refresh after the screen was resized to allow the pie chart to resize as per the screen size. 
 
@@ -173,24 +170,23 @@ I made some changes to my project. Some features have become unnecessary or have
     - Hover button changes color when mouse hovers
     - Input field only accepts numbers
     - Result is added correctly underneath the button
-    - Alert window opens and correct message is displied.  
-
+    - Alert window opens and correct message is displayed.  
 
 #### Devices used during testing:
 
 - HP laptop
-- Iphone 14 Pro Max
-- Iphone 13 Pro
+- iPhone 14 Pro Max
+- iPhone 13 Pro
 
 ### Chrome Dev Tools
 
-Chrome dev tools was used throughout the development of the project to test responsiveness. 
+Chrome dev tools were used throughout the development of the project to test responsiveness. 
 Responsiveness was tested using Dev Tools to emulate the following devices :
 
-- Iphone SE
-- Iphone XR
-- Iphone 12 Pro
-- Iphone 14 Pro Max
+- iPhone SE
+- iPhone XR
+- iPhone 12 Pro
+- iPhone 14 Pro Max
 - Pixel 7
 - Samsung Galaxy S8+
 - Samsung Galaxy S20 Ultra
@@ -207,7 +203,7 @@ Responsiveness was tested using Dev Tools to emulate the following devices :
 ### Browser Testing
 
 During development, webpage was mainly tested on Google Chrome. 
-However, during testing process below browsers have been used :
+However, during testing process below browsers have been used:
 
 - Google Chrome
 - Microsoft Edge
@@ -233,17 +229,43 @@ However, during testing process below browsers have been used :
 
 ![CSS validator results](testing/css-validator.png)
 
+- I checked the JavaScript code using JSHint. 
+[JavaScript validator](https://jshint.com/)
+
+- The first time when I checked my code I had the following errors:
+
+- 21 warnings
+- 4 undefined variables
+- 3 unused variables
+
+![JavaScript validator results first time](testing/js-validator-before.png)
+
+- I have rectified the errors, and this is the result:
+
+- 1 warning
+- 0 undefined variables
+- 3 unused variables 
+
+- The warning remaining is: Exponentiation operator' is only available in ES7 (use 'esversion: 7'). I used and exponential operator which is for esversion:7 but the JSHint validator can only validate for esversion:6.
+
+- The three unused variables are remaining because one is called from the DOM and the other two are adding and removing the Popup window when button is clicked. 
+- calculateBMI
+- openPopup
+- closePopup
+
+![JavaScript validator after fixing errors](testing/js-validator-after.png)
+
 ### Bugs and Fixes
 
-    - The website requires a refresh after the screen was resized to allow the pie chart to resize as per the screen size. 
-
+- The website requires a refresh after the screen is resized to allow the pie chart to resize as per the screen size. 
+- Popup window opened despite no data being introduced in the input box. This was resolved by adding a function which stops the popup window to open unless the correct value was introduced into the input box
 
 ## Deployment 
 
 The main branch of this repository is the most current version and has been used for the deployed version of the site.
-The Code Institiue student template was used to create this project.
+The Code Institute student template was used to create this project.
 
-[Code Institute Template ](https://github.com/Code-Institute-Org/ci-full-template)
+[Code Institute Template](https://github.com/Code-Institute-Org/ci-full-template)
 
 1. Click **Use This Template** button.
 2. Give your repository a name, and description.
@@ -267,20 +289,22 @@ The Code Institiue student template was used to create this project.
 
 ### Images :
 
-- Project image for the header was taken from Google an converted by myself
+- Project image for the header was taken from Google and converted by me
 
 ### Code :
 
 - [Code Institute, Love math project](https://github.com/Code-Institute-Solutions/Love-Math-Solutions) :
-    - Inspiration for the javascript code.
+    - Inspiration for the JavaScript code.
 
 - [Google Charts](https://developers.google.com/chart)
     - Inspiration for the Pie Chart
 
 - [Geeks for geeks](https://www.geeksforgeeks.org/):
-    - Inspiration for the blinkng button and BMI calculator javascript code
+    - Inspiration for the blinking button and BMI calculator JavaScript code
 
 - [Font Awesome](https://fontawesome.com/) :
     - Used for all icons across the website.
 
 ## Thank you to everyone who read this documentation! 
+
+

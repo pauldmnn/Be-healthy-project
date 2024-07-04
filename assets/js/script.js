@@ -81,7 +81,7 @@ function openPopup() {
 function closePopup() {
   popup.classList.remove("open-popup");
 }
- 
+
 var google = window.google;
 
 // Load the visualisation API and the correct package
@@ -132,7 +132,6 @@ function addFluids() {
 
   // Show liquid amount on UI
   totalAmountValue.textContent = totalLiquidAmount;
-
 
   //Popup message to inform user if the reached their target
   if (fluidInputValue.value <= 0) {
