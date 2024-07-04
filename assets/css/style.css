@@ -22,7 +22,7 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  background-color: rgb(227, 224, 224);
+  background-color: #fafafa;
   align-items: center;
   box-sizing: border-box;
   margin-left: 10rem;
@@ -35,7 +35,7 @@ body {
 .bmi-style {
   flex: 1;
   text-align: center;
-  background-color: azure;
+  background-color: rgb(140, 243, 243);
 }
 
 h2 {
@@ -68,15 +68,15 @@ span {
 input[type="number"] {
   width: 50%;
   padding: 8px;
-  border: 0.5px solid #ccc;
-  border-radius: 2px;
+  border: 1.5px solid #ccc;
+  border-radius: 4px;
   box-sizing: border-box;
+  background-color: rgba(255, 255, 0, 0.224);
 }
 
 /*Style the button*/
 .myBtn {
   background-color: rgba(0, 251, 255, 0.509);
-  ;
   color: #0f0f0f;
   border: 0;
   outline: none;
@@ -109,7 +109,7 @@ button:hover {
 /*Style the popup box*/
 .popup {
   width: 500px;
-  background: yellow;
+  background: rgb(228, 228, 228);
   border-radius: 10px;
   position: absolute;
   top: 0;
@@ -145,13 +145,13 @@ button:hover {
   margin-right: 10rem;
   padding: 1%;
   text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .piechart_details {
   flex: 1;
   text-align: center;
-  background-color: azure;
+  background-color: rgb(140, 243, 243);
   padding: 5px;
 }
 
@@ -162,7 +162,7 @@ button:hover {
 .fluids-container {
   display: flex;
   justify-content: center;
-  background-color: rgb(40, 215, 254);
+  background-color: #fafafa;
   align-items: center;
   box-sizing: border-box;
   margin-left: 10rem;
@@ -190,7 +190,7 @@ button:hover {
 .fluids-style {
   flex: 1;
   text-align: center;
-  background-color: azure;
+  background-color: rgb(140, 243, 243);
 }
 
 .fluids-panel {
