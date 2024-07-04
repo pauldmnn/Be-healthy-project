@@ -71,7 +71,7 @@ setTimeout(() => {
 let popup = document.getElementById("popup");
 
 function openPopup() {
-  if (isNaN(weight) || isNaN(height)) {
+  if (weightInp.value <= 0 || heightInp.value <= 0) {
     alert("Please enter valid height and weight.");
   } else {
     popup.classList.add("open-popup")};
