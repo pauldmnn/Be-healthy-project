@@ -8,28 +8,28 @@ let bmiResult = document.getElementById("result");
 
 function calculateBMI() {
 
-  var height = parseFloat(heightInp.value);
-  var weight = parseFloat(weightInp.value);
+  let height = parseFloat(heightInp.value);
+  let weight = parseFloat(weightInp.value);
 
-  var bmi = weight / ((height / 100) ** 2);
-  var classification = "";
+  let bmi = weight / ((height / 100) ** 2);
+  let classification = "";
 
   /**
    * Tell the result to the user and
    * tell the user in their BMI
    */
   if (bmi > 1 && bmi <= 16) {
-    classification = "Severly underweight"
+    classification = "Severly underweight";
   } else if (bmi > 16 && bmi <= 18.5) {
-    classification = "Underweight"
+    classification = "Underweight";
   } else if (bmi > 18.5 && bmi <= 24) {
-    classification = "Optimal weight"
+    classification = "Optimal weight";
   } else if (bmi > 24 && bmi <= 29) {
-    classification = "Overweight"
+    classification = "Overweight";
   } else if (bmi > 29 && bmi <= 39) {
-    classification = "Obese"
+    classification = "Obese";
   } else if (bmi > 39 && bmi <= 100) {
-    classification = "Severly obese"
+    classification = "Severly obese";
   }
 
   bmiResult.innerHTML = "Your BMI is: " + bmi.toFixed(2) +
@@ -37,7 +37,7 @@ function calculateBMI() {
 }
 
 // Get the element by its ID 
-const blinkDiv =
+const blinkBtn =
   document.getElementById("blinkBtn");
 
 // An array of colors to be used for blinking 
@@ -74,20 +74,25 @@ function openPopup() {
   if (weightInp.value <= 0 || heightInp.value <= 0) {
     alert("Please enter valid height and weight.");
   } else {
-    popup.classList.add("open-popup")};
+    popup.classList.add("open-popup");
+  }
 }
 
 function closePopup() {
   popup.classList.remove("open-popup");
 }
+ 
+var google = window.google;
 
+// Load the visualisation API and the correct package
 google.charts.load("current", {
   packages: ["corechart"]
 });
 google.charts.setOnLoadCallback(drawChart);
 
+//Create the data table
 function drawChart() {
-  var data = google.visualization.arrayToDataTable([
+  let data = google.visualization.arrayToDataTable([
     ['Type of food', 'Amount'],
     ['Potatoes, bread, rice, pasta and other starchy carbohydrate foods', 38],
     ['Fruit and vegetables', 40],
@@ -96,14 +101,15 @@ function drawChart() {
     ['Oils and spreads', 2]
   ]);
 
-  var options = {
+  // Set chart options
+  const options = {
     title: 'Eat well guide',
     width: "auto",
     height: "500px",
     is3D: true,
   };
 
-  var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+  const chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
   chart.draw(data, options);
 }
 
@@ -113,34 +119,28 @@ function drawChart() {
  */
 const fluidInputValue = document.getElementById("fluids");
 const totalAmountValue = document.getElementById("total-amount");
-const fluidsButton = document.getElementById("add-fluids-btn")
+const fluidsButton = document.getElementById("add-fluids-btn");
 
 function addFluids() {
 
-  console.log(typeof fluidInputValue.value)
-  console.log(typeof totalAmountValue.textContent)
-
   //Convert values to number type
-  fluidInputValueToNumber = Number(fluidInputValue.value)
-  totalAmountValueToNumber = Number(totalAmountValue.textContent)
-  console.log(typeof fluidInputValueToNumber)
-  console.log(typeof totalAmountValueToNumber)
+  const fluidInputValueToNumber = Number(fluidInputValue.value);
+  const totalAmountValueToNumber = Number(totalAmountValue.textContent);
 
   // Calculate total liquid amount
-  const totalLiquidAmount = fluidInputValueToNumber + totalAmountValueToNumber
-  console.log(totalLiquidAmount)
+  const totalLiquidAmount = fluidInputValueToNumber + totalAmountValueToNumber;
 
   // Show liquid amount on UI
-  totalAmountValue.textContent = totalLiquidAmount
+  totalAmountValue.textContent = totalLiquidAmount;
 
-  
- //Popup message to inform user if the reached their target
-  if (fluids.value <= 0) {
-     alert("Please enter the amount of fluids you drank."); 
-     } else if (totalLiquidAmount >= 1500) {
-    alert("Congradulations! You have reached your daily target")
+
+  //Popup message to inform user if the reached their target
+  if (fluidInputValue.value <= 0) {
+    alert("Please enter the amount of fluids you drank.");
+  } else if (totalLiquidAmount >= 1500) {
+    alert("Congradulations! You have reached your daily target");
   } else {
-    alert("Continue drinking. Your are on the right track")
+    alert("Continue drinking. Your are on the right track");
   }
 }
 fluidsButton.addEventListener("click", addFluids);
