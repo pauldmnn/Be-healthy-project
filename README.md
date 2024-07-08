@@ -139,7 +139,7 @@ I made some changes to my project. Some features have become unnecessary or have
 
 ![BMI Calculator](testing/bmi-calculator.png)
 
-    - Tells the user about importance of having a normal body weight and the user can calculate their own BMI.
+- Tells the user about importance of having a normal body weight and the user can calculate their own BMI.
 
 ### Eat well guide
 
