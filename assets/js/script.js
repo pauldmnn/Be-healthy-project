@@ -61,14 +61,14 @@ function blinkBackground() {
  * Start the blinking by setting an interval   
  * that calls the blinkBackground   
  * function every 500ms (0.5 second) 
-*/
+ */
 const blinkingInterval =
   setInterval(blinkBackground, 500);
 
 /**
  * To stop blinking after 10 seconds,  
  * use setTimeout to clear the interval
-*/ 
+ */
 setTimeout(() => {
   clearInterval(blinkingInterval);
 }, 10000);
@@ -76,7 +76,7 @@ setTimeout(() => {
 /** 
  * Creates the popup with the result when 
  * "Check you BMI button" in clicked
- */ 
+ */
 let popup = document.getElementById("popup");
 
 function openPopup() {

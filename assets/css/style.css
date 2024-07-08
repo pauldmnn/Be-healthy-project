@@ -76,12 +76,14 @@ input[type="number"] {
 
 ::placeholder {
   color: #101010;
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
 
-::-ms-input-placeholder { /* Edge */
+::-ms-input-placeholder {
+  /* Edge */
   color: #101010;
- }
+}
 
 /*Style the button*/
 .myBtn {
