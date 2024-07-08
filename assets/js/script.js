@@ -1,11 +1,12 @@
 /**
  *Initial function for the calculator
- which wil calculate the BMI
+ which will calculate the BMI
  */
 let heightInp = document.getElementById("height");
 let weightInp = document.getElementById("weight");
 let bmiResult = document.getElementById("result");
 
+// Ecuation function which will calculate the BMI
 function calculateBMI() {
 
   let height = parseFloat(heightInp.value);
@@ -32,19 +33,22 @@ function calculateBMI() {
     classification = "Severly obese";
   }
 
+  // Displays the BMI result
   bmiResult.innerHTML = "Your BMI is: " + bmi.toFixed(2) +
     " (This means that you are: " + classification + ")";
 }
 
-// Get the element by its ID 
+// Get the element by it's ID for the blink button
 const blinkBtn =
   document.getElementById("blinkBtn");
 
 // An array of colors to be used for blinking 
 const colors = ['#00FF00', 'orange', '#FF01F7'];
 
-// Variable to keep track of the 
-// current color index 
+/** 
+ * Variable to keep track of the 
+ * current color index
+*/
 let currentColorIndex = 0;
 
 // Function to toggle the background 
@@ -123,6 +127,7 @@ function drawChart() {
     is3D: true,
   };
 
+  // Draws the chart with adds the values and data
   const chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
   chart.draw(data, options);
 }
@@ -156,4 +161,6 @@ function addFluids() {
     alert("Continue drinking. Your are on the right track");
   }
 }
+
+// When Add fluids button is clicked adds the amount to the total amount drank
 fluidsButton.addEventListener("click", addFluids);
