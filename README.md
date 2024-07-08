@@ -40,7 +40,7 @@ Below I have listed the 5 plains of UX:
 ### User Stories
 
 - As a user, I want the purpose of a webpage to be clear so I can decide if the content is right for me.
-- As a user, I want to be able to calculate my BIM by inputting mu weight and height.
+- As a user, I want to be able to calculate my BMI by inputting mu weight and height.
 - As a user, I want to be able to check what types of foods I need to eat for a healthy and well balanced diet
 - As a user, I want to monitor my fluid intake so I know if I am hydrated.
 
@@ -141,10 +141,18 @@ I made some changes to my project. Some features have become unnecessary or have
 
 - Tells the user about importance of having a normal body weight and the user can calculate their own BMI.
 
+### Popup window
+
+![BMI Calculator](testing/popup-window.png)
+
+- Tells the user the result of their BMI.
+- Popup closes when the user clicks the OK button
+
 ### Eat well guide
 
 ![Eat ell guide](testing/pie-chart.png)
-    - Tells the user about what they need to eat for a healthy and balanced diet. The pie chart is interactive and will tell the user the percentage of different types of foods they need to have eat.
+
+- Tells the user about what they need to eat for a healthy and balanced diet. The pie chart is interactive and will tell the user the percentage of different types of foods they need to have eat.
 
 ### Fluids
 
@@ -165,6 +173,11 @@ I made some changes to my project. Some features have become unnecessary or have
     - Can only add number to the input field
     - Blink colors are operational and work for 10 seconds and instructed in JS
     - Popup window opens when the Check BMI button is clicked
+
+- Eat well guide
+    
+    - When hovered over the pie chart it highlights the section and a message pop's up with the type of foods and the percenage 
+    - When hovered over the an item in the legend that specific color will be highlighted in the pie chart
 
 - Fluids monitoring
     - Hover button changes color when mouse hovers

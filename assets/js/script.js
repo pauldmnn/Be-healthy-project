@@ -56,18 +56,27 @@ function blinkBackground() {
     (currentColorIndex + 1) % colors.length;
 }
 
-// Start the blinking by setting an interval  
-// that calls the blinkBackground  
-// function every 500ms (0.5 second) 
+//Code inspration from https://www.geeksforgeeks.org/
+/** 
+ * Start the blinking by setting an interval   
+ * that calls the blinkBackground   
+ * function every 500ms (0.5 second) 
+*/
 const blinkingInterval =
   setInterval(blinkBackground, 500);
 
-// To stop blinking after 10 seconds,  
-// use setTimeout to clear the interval 
+/**
+ * To stop blinking after 10 seconds,  
+ * use setTimeout to clear the interval
+*/ 
 setTimeout(() => {
   clearInterval(blinkingInterval);
 }, 10000);
 
+/** 
+ * Creates the popup with the result when 
+ * "Check you BMI button" in clicked
+ */ 
 let popup = document.getElementById("popup");
 
 function openPopup() {
@@ -78,10 +87,15 @@ function openPopup() {
   }
 }
 
+/**
+ * Closes the popup window when
+ * the "OK" button is clicked
+ */
 function closePopup() {
   popup.classList.remove("open-popup");
 }
 
+// Code inspiration from google charts site
 var google = window.google;
 
 // Load the visualisation API and the correct package
